@@ -1,0 +1,12 @@
+{
+  "name": "herramientas-educativas-servidor",
+  "version": "1.0.0",
+  "description": "Servidor simple para Herramientas Educativas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["servidor", "educacion"],
+  "author": "",
+  "license": "ISC"
+}
