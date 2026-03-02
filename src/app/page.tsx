@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { 
-  faGauge, 
-  faEye, 
-  faChartLine, 
-  faPeopleRoof, 
-  faClipboardList, 
-  faUserGraduate, 
-  faChalkboardTeacher, 
-  faHeart, 
+import {
+  faGauge,
+  faEye,
+  faChartLine,
+  faPeopleRoof,
+  faClipboardList,
+  faUserGraduate,
+  faChalkboardTeacher,
+  faHeart,
   faBrain,
   faCalendarCheck,
   faSchool
@@ -48,7 +48,7 @@ const plataformasGestion = [
     icon: faCalendarCheck,
     title: 'Registro de Inasistencias',
     description: 'Control y seguimiento de asistencia de estudiantes.',
-    url: 'https://registroinasistencia.vercel.app/'
+    url: 'https://registroinasistencia-xi.vercel.app/'
   }
 ]
 
@@ -97,7 +97,7 @@ export default function Home() {
         />
         <h1>Plataforma Educativa Integrada</h1>
         <p>
-          Acceso central a observación de aula, dashboards directivos y cuestionarios 
+          Acceso central a observación de aula, dashboards directivos y cuestionarios
           institucionales en un formato moderno y eficiente.
         </p>
       </header>
@@ -109,11 +109,11 @@ export default function Home() {
         </h2>
         <div className="cardsGrid">
           {plataformasGestion.map((item, index) => (
-            <a 
+            <a
               key={index}
-              href={item.url} 
+              href={item.url}
               className="card"
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
               aria-label={`${item.title}. ${item.description}`}
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -136,11 +136,11 @@ export default function Home() {
         </h2>
         <div className="cardsGrid">
           {cuestionarios.map((item, index) => (
-            <a 
+            <a
               key={index}
-              href={item.url} 
+              href={item.url}
               className="card"
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
               aria-label={`${item.title}. ${item.description}`}
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
