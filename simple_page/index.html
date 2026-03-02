@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educativa · Minimal</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <style>
+        :root {
+            --bg: #1e293b;
+            --card: #293548;
+            --primary: #3b82f6;
+            --accent: #fbbf24;
+            --text: #f1f5f9;
+            --muted: #cbd5e1;
+            --radius: 18px;
+            --shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+            --max: 1080px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.12), transparent 28%),
+                radial-gradient(circle at 80% 0%, rgba(251, 191, 36, 0.10), transparent 30%),
+                var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 26px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page {
+            width: 100%;
+            max-width: var(--max);
+            display: grid;
+            gap: 22px;
+        }
+
+        header {
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius);
+            padding: 26px;
+            box-shadow: var(--shadow);
+            display: grid;
+            gap: 14px;
+            text-align: center;
+        }
+
+        header img {
+            width: 110px;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #f1f5f9;
+        }
+
+        header p {
+            color: #cbd5e1;
+            max-width: 720px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .grid {
+            background: var(--card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius);
+            padding: 26px;
+            box-shadow: var(--shadow);
+            display: grid;
+            gap: 18px;
+        }
+
+        .grid h2 {
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #f1f5f9;
+            font-weight: 700;
+        }
+
+        .grid h2 i {
+            color: #fbbf24;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 14px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 18px;
+            text-decoration: none;
+            color: #0f172a;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #d1d5db;
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+            background: #f8fafc;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 10px;
+            border-radius: 999px;
+            background: #dbeafe;
+            color: #1e40af;
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+
+        .badge i {
+            color: #f59e0b;
+        }
+
+        .card h3 {
+            margin: 10px 0 8px;
+            font-size: 1.05rem;
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .card p {
+            color: #4b5563;
+            line-height: 1.45;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.92rem;
+            padding: 12px 0;
+        }
+
+        footer strong {
+            color: var(--text);
+        }
+
+        @media (max-width: 720px) {
+            body {
+                padding: 18px;
+            }
+
+            header {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <img src="logo-oficial.png" alt="Logo oficial Colegio Madres Dominicas">
+            <h1>Plataforma Educativa Integrada</h1>
+            <p>Acceso central a observación de aula, dashboards directivos y cuestionarios institucionales en un formato
+                simple, claro y consistente.</p>
+        </header>
+
+        <section class="grid" id="gestion">
+            <h2><i class="fas fa-tachometer-alt"></i> Plataformas de Gestión</h2>
+            <div class="cards">
+                <a class="card" href="https://observacionaula.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <span class="badge"><i class="fas fa-eye"></i> Observación</span>
+                    <h3>Plataforma de Observación de Aula</h3>
+                    <p>Registro y análisis de observaciones pedagógicas en aula.</p>
+                </a>
+                <a class="card" href="https://mi-dashboard-five.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <span class="badge"><i class="fas fa-chart-line"></i> Dirección</span>
+                    <h3>Plataforma Directiva Observación al aula</h3>
+                    <p>Visualización integrada de indicadores y datos educativos.</p>
+                </a>
+                <a class="card" href="https://colegios-one.vercel.app/login" target="_blank" rel="noopener noreferrer">
+                    <span class="badge"><i class="fas fa-people-roof"></i> Convivencia</span>
+                    <h3>Sistema de Gestión de Convivencia Escolar</h3>
+                    <p>Registro y seguimiento de casos y acciones de convivencia escolar.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="grid" id="cuestionarios">
+            <h2><i class="fas fa-clipboard-list"></i> Cuestionarios</h2>
+            <div class="cards">
+                <a class="card" href="https://acosoestudiante.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <span class="badge"><i class="fas fa-user-graduate"></i> Estudiantes</span>
+                    <h3>Cuestionario de Acoso Escolar Estudiantes</h3>
+                    <p>Detección de situaciones de acoso desde la voz estudiantil.</p>
+                </a>
+                <a class="card" href="https://convivencia-eu8n.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <span class="badge"><i class="fas fa-chalkboard-teacher"></i> Docentes</span>
+                    <h3>Cuestionario de Acoso Escolar Docentes</h3>
+                    <p>Instrumento para observar conductas y clima escolar.</p>
+                </a>
+                <a class="card" href="https://evide-snowy.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <span class="badge"><i class="fas fa-heart"></i> Desarrollo</span>
+                    <h3>Escala de Desarrollo Integral</h3>
+                    <p>Valoración del desarrollo personal y socioemocional.</p>
+                </a>
+                <a class="card" href="https://tfa-nu.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <span class="badge"><i class="fas fa-brain"></i> Emocional</span>
+                    <h3>Test de Tolerancia a la Frustración</h3>
+                    <p>Evaluación de la respuesta emocional ante la frustración.</p>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <div>© 2026 Plataforma Educativa Integrada</div>
+            <div><strong>Colegio Madres Dominicas de Concepción</strong></div>
+        </footer>
+    </div>
+</body>
+
+</html>
