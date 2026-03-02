@@ -104,7 +104,7 @@ export default function Home() {
 
       <section className="section" id="gestion">
         <h2 className="sectionTitle">
-          <FontAwesomeIcon icon={faGauge} style={{ fontSize: '1.1rem' }} />
+          <FontAwesomeIcon icon={faGauge} style={{ fontSize: '0.85rem' }} />
           Plataformas de Gestión
         </h2>
         <div className="cardsGrid">
@@ -118,7 +118,7 @@ export default function Home() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <span className="badge">
-                <FontAwesomeIcon icon={item.icon} style={{ fontSize: '0.7rem' }} />
+                <FontAwesomeIcon icon={item.icon} style={{ fontSize: '0.65rem' }} />
                 {item.badge}
               </span>
               <h3>{item.title}</h3>
@@ -130,7 +130,7 @@ export default function Home() {
 
       <section className="section" id="cuestionarios">
         <h2 className="sectionTitle">
-          <FontAwesomeIcon icon={faClipboardList} style={{ fontSize: '1.1rem' }} />
+          <FontAwesomeIcon icon={faClipboardList} style={{ fontSize: '0.85rem' }} />
           Cuestionarios
         </h2>
         <div className="cardsGrid">
@@ -144,7 +144,7 @@ export default function Home() {
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
               <span className="badge">
-                <FontAwesomeIcon icon={item.icon} style={{ fontSize: '0.7rem' }} />
+                <FontAwesomeIcon icon={item.icon} style={{ fontSize: '0.65rem' }} />
                 {item.badge}
               </span>
               <h3>{item.title}</h3>
