@@ -34,7 +34,7 @@ const plataformasGestion = [
     icon: faPeopleRoof,
     title: 'Sistema de Gestión de Convivencia Escolar',
     description: 'Registro y seguimiento de casos y acciones de convivencia escolar.',
-    url: 'https://colegios-one.vercel.app/login'
+    url: 'https://colegios-one.vercel.app/'
   },
   {
     badge: 'Administración',
