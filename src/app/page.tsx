@@ -104,7 +104,7 @@ export default function Home() {
 
       <section className="section" id="gestion">
         <h2 className="sectionTitle">
-          <FontAwesomeIcon icon={faGauge} style={{ fontSize: '0.85rem' }} />
+          <FontAwesomeIcon icon={faGauge} style={{ fontSize: '0.85rem' }} aria-hidden="true" />
           Plataformas de Gestión
         </h2>
         <div className="cardsGrid">
@@ -115,10 +115,11 @@ export default function Home() {
               className="card"
               target="_blank" 
               rel="noopener noreferrer"
+              aria-label={`${item.title}. ${item.description}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <span className="badge">
-                <FontAwesomeIcon icon={item.icon} style={{ fontSize: '0.65rem' }} />
+                <FontAwesomeIcon icon={item.icon} style={{ fontSize: '0.65rem' }} aria-hidden="true" />
                 {item.badge}
               </span>
               <h3>{item.title}</h3>
@@ -130,7 +131,7 @@ export default function Home() {
 
       <section className="section" id="cuestionarios">
         <h2 className="sectionTitle">
-          <FontAwesomeIcon icon={faClipboardList} style={{ fontSize: '0.85rem' }} />
+          <FontAwesomeIcon icon={faClipboardList} style={{ fontSize: '0.85rem' }} aria-hidden="true" />
           Cuestionarios
         </h2>
         <div className="cardsGrid">
@@ -141,10 +142,11 @@ export default function Home() {
               className="card"
               target="_blank" 
               rel="noopener noreferrer"
+              aria-label={`${item.title}. ${item.description}`}
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
               <span className="badge">
-                <FontAwesomeIcon icon={item.icon} style={{ fontSize: '0.65rem' }} />
+                <FontAwesomeIcon icon={item.icon} style={{ fontSize: '0.65rem' }} aria-hidden="true" />
                 {item.badge}
               </span>
               <h3>{item.title}</h3>
