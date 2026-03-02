@@ -41,7 +41,7 @@ const plataformasGestion = [
     icon: faSchool,
     title: 'Sistema de Gestión Colegio 482',
     description: 'Gestión integral administrativa y académica del establecimiento.',
-    url: 'https://sgce-zeta.vercel.app/auth?next=%2F'
+    url: 'https://sgce-zeta.vercel.app/'
   },
   {
     badge: 'Asistencia',
