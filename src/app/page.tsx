@@ -11,7 +11,8 @@ import {
   faHeart,
   faBrain,
   faCalendarCheck,
-  faSchool
+  faSchool,
+  faDoorOpen
 } from '@fortawesome/free-solid-svg-icons'
 
 const plataformasGestion = [
@@ -49,6 +50,13 @@ const plataformasGestion = [
     title: 'Registro de Inasistencias',
     description: 'Control y seguimiento de asistencia de estudiantes.',
     url: 'https://registroinasistencia-xi.vercel.app/'
+  },
+  {
+    badge: 'Salidas',
+    icon: faDoorOpen,
+    title: 'Gestión de Tarjetas de Salida',
+    description: 'Registro y gestión de permisos de salida de estudiantes.',
+    url: 'https://tarjetas-salidas.vercel.app/'
   }
 ]
 
